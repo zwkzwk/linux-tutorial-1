@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 用户管理 | LINUX-TUTORIAL</title>
+    <meta name="description" content="数据库教程">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/linux-tutorial/favicon.ico">
+    
+    <link rel="preload" href="/linux-tutorial/assets/css/0.styles.341612c9.css" as="style"><link rel="preload" href="/linux-tutorial/assets/js/app.4dd18532.js" as="script"><link rel="preload" href="/linux-tutorial/assets/js/4.271fb7d6.js" as="script"><link rel="preload" href="/linux-tutorial/assets/js/26.c7c37a93.js" as="script"><link rel="prefetch" href="/linux-tutorial/assets/js/10.69fdd68c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/11.eb7175b8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/12.d35ea0e7.js"><link rel="prefetch" href="/linux-tutorial/assets/js/13.d45547e1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/14.140732b5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/15.12c75179.js"><link rel="prefetch" href="/linux-tutorial/assets/js/16.28e2806c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/17.d1e24780.js"><link rel="prefetch" href="/linux-tutorial/assets/js/18.7d20f4f6.js"><link rel="prefetch" href="/linux-tutorial/assets/js/19.72334cce.js"><link rel="prefetch" href="/linux-tutorial/assets/js/20.243efe4c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/21.417fb182.js"><link rel="prefetch" href="/linux-tutorial/assets/js/22.0f4551f5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/23.c6fbfffe.js"><link rel="prefetch" href="/linux-tutorial/assets/js/24.8af3672b.js"><link rel="prefetch" href="/linux-tutorial/assets/js/25.d455181f.js"><link rel="prefetch" href="/linux-tutorial/assets/js/27.35736e6c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/28.2f12c1e5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/29.2d1c1b08.js"><link rel="prefetch" href="/linux-tutorial/assets/js/30.651fa6b5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/31.8a0bc2bd.js"><link rel="prefetch" href="/linux-tutorial/assets/js/32.680c3db8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/33.d7c1dff6.js"><link rel="prefetch" href="/linux-tutorial/assets/js/34.87e3cf7a.js"><link rel="prefetch" href="/linux-tutorial/assets/js/35.867ae8b0.js"><link rel="prefetch" href="/linux-tutorial/assets/js/36.38ea1dde.js"><link rel="prefetch" href="/linux-tutorial/assets/js/37.ab01ee97.js"><link rel="prefetch" href="/linux-tutorial/assets/js/38.af1d15b8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/39.ae9559b5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/40.e5b6954b.js"><link rel="prefetch" href="/linux-tutorial/assets/js/41.e8a94e61.js"><link rel="prefetch" href="/linux-tutorial/assets/js/42.41f47798.js"><link rel="prefetch" href="/linux-tutorial/assets/js/43.7a55c2fa.js"><link rel="prefetch" href="/linux-tutorial/assets/js/44.fc7677dd.js"><link rel="prefetch" href="/linux-tutorial/assets/js/45.71927ad5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/46.5c73c434.js"><link rel="prefetch" href="/linux-tutorial/assets/js/47.8dcc9e40.js"><link rel="prefetch" href="/linux-tutorial/assets/js/48.8d50fab8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/49.77f770cd.js"><link rel="prefetch" href="/linux-tutorial/assets/js/5.a5e63d96.js"><link rel="prefetch" href="/linux-tutorial/assets/js/50.7f42c141.js"><link rel="prefetch" href="/linux-tutorial/assets/js/51.09009399.js"><link rel="prefetch" href="/linux-tutorial/assets/js/52.c565a8c2.js"><link rel="prefetch" href="/linux-tutorial/assets/js/53.fc9e7d7c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/54.cc24d207.js"><link rel="prefetch" href="/linux-tutorial/assets/js/55.bf2ed9cb.js"><link rel="prefetch" href="/linux-tutorial/assets/js/56.5efcc9ed.js"><link rel="prefetch" href="/linux-tutorial/assets/js/57.b82a9d75.js"><link rel="prefetch" href="/linux-tutorial/assets/js/58.da1a6293.js"><link rel="prefetch" href="/linux-tutorial/assets/js/59.f2d560a3.js"><link rel="prefetch" href="/linux-tutorial/assets/js/6.b1076aa1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/7.49d24c76.js"><link rel="prefetch" href="/linux-tutorial/assets/js/8.521f6d18.js"><link rel="prefetch" href="/linux-tutorial/assets/js/9.0cff09de.js"><link rel="prefetch" href="/linux-tutorial/assets/js/vendors~flowchart.f5cdfab1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/vendors~notification.7414fc30.js">
+    <link rel="stylesheet" href="/linux-tutorial/assets/css/0.styles.341612c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/linux-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="LINUX-TUTORIAL" class="logo"> <span class="site-name can-hide">LINUX-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/linux-tutorial/linux/cli/" class="nav-link router-link-active">
+  Linux 命令
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/ops/" class="nav-link">
+  Linux 运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/soft/" class="nav-link">
+  Linux 软件运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/docker/" class="nav-link">
+  Docker 教程
+</a></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dunwu/linux-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/linux-tutorial/linux/cli/" class="nav-link router-link-active">
+  Linux 命令
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/ops/" class="nav-link">
+  Linux 运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/soft/" class="nav-link">
+  Linux 软件运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/docker/" class="nav-link">
+  Docker 教程
+</a></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dunwu/linux-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Linux 用户管理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_1-linux-用户管理要点" class="sidebar-link">1. Linux 用户管理要点</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-命令常见用法" class="sidebar-link">2. 命令常见用法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-1-groupadd" class="sidebar-link">2.1. groupadd</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-2-groupdel" class="sidebar-link">2.2. groupdel</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-3-groupmod" class="sidebar-link">2.3. groupmod</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-4-useradd" class="sidebar-link">2.4. useradd</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-5-userdel" class="sidebar-link">2.5. userdel</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-6-usermod" class="sidebar-link">2.6. usermod</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-7-passwd" class="sidebar-link">2.7. passwd</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-8-su" class="sidebar-link">2.8. su</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-user.html#_2-9-sudo" class="sidebar-link">2.9. sudo</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="linux-用户管理"><a href="#linux-用户管理" class="header-anchor">#</a> Linux 用户管理</h1> <blockquote><p>关键词：<code>groupadd</code>, <code>groupdel</code>, <code>groupmod</code>, <code>useradd</code>, <code>userdel</code>, <code>usermod</code>, <code>passwd</code>, <code>su</code>, <code>sudo</code></p></blockquote> <h2 id="_1-linux-用户管理要点"><a href="#_1-linux-用户管理要点" class="header-anchor">#</a> 1. Linux 用户管理要点</h2> <ul><li>创建用户组 - 使用 <a href="#groupadd">groupadd</a></li> <li>删除用户组 - 使用 <a href="#groupdel">groupdel</a></li> <li>修改用户组信息 - 使用 <a href="#groupmod">groupmod</a></li> <li>创建用户 - 使用 <a href="#useradd">useradd</a></li> <li>删除用户 - 使用 <a href="#userdel">userdel</a></li> <li>修改用户信息 - 使用 <a href="#usermod">usermod</a></li> <li>设置用户认证信息 - 使用 <a href="#passwd">passwd</a></li> <li>切换用户 - 使用 <a href="#su">su</a></li> <li>当前用户想执行没有权限执行的命令时，使用其他用户身份去执行 - 使用 <a href="#sudo">sudo</a></li></ul> <h2 id="_2-命令常见用法"><a href="#_2-命令常见用法" class="header-anchor">#</a> 2. 命令常见用法</h2> <h3 id="_2-1-groupadd"><a href="#_2-1-groupadd" class="header-anchor">#</a> 2.1. groupadd</h3> <blockquote><p>groupadd 命令用于创建一个新的用户组，新用户组的信息将被添加到系统文件中。</p> <p>参考：http://man.linuxde.net/groupadd</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 建立一个新组，并设置组 ID 加入系统</span>
+$ <span class="token function">groupadd</span> -g <span class="token number">344</span> jsdigname
+</code></pre></div><h3 id="_2-2-groupdel"><a href="#_2-2-groupdel" class="header-anchor">#</a> 2.2. groupdel</h3> <blockquote><p>groupdel 命令用于删除指定的用户组，本命令要修改的系统文件包括 <code>/ect/group</code> 和 <code>/ect/gshadow</code>。若该群组中仍包括某些用户，则必须先删除这些用户后，方能删除群组。</p> <p>参考：http://man.linuxde.net/groupdel</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">groupadd</span> damon  <span class="token comment"># 创建damon用户组</span>
+$ <span class="token function">groupdel</span> damon  <span class="token comment"># 删除这个用户组</span>
+</code></pre></div><h3 id="_2-3-groupmod"><a href="#_2-3-groupmod" class="header-anchor">#</a> 2.3. groupmod</h3> <blockquote><p>groupmod 命令更改群组识别码或名称。需要更改群组的识别码或名称时，可用 groupmod 指令来完成这项工作。</p> <p>参考：http://man.linuxde.net/groupmod</p></blockquote> <h3 id="_2-4-useradd"><a href="#_2-4-useradd" class="header-anchor">#</a> 2.4. useradd</h3> <blockquote><p>useradd 命令用于 Linux 中创建的新的系统用户。useradd 可用来建立用户帐号。帐号建好之后，再用 passwd 设定帐号的密码．而可用 userdel 删除帐号。使用 useradd 指令所建立的帐号，实际上是保存在 <code>/etc/passwd</code> 文本文件中。</p> <p>参考：http://man.linuxde.net/useradd</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 新建用户加入组</span>
+$ <span class="token function">useradd</span> –g sales jack –G company,employees    <span class="token comment"># -g：加入主要组、-G：加入次要组</span>
+
+<span class="token comment"># 建立一个新用户账户，并设置 ID</span>
+$ <span class="token function">useradd</span> caojh -u <span class="token number">544</span>
+</code></pre></div><h3 id="_2-5-userdel"><a href="#_2-5-userdel" class="header-anchor">#</a> 2.5. userdel</h3> <blockquote><p>userdel 命令用于删除给定的用户，以及与用户相关的文件。若不加选项，则仅删除用户帐号，而不删除相关文件。</p> <p>参考：http://man.linuxde.net/userdel</p></blockquote> <p>示例：</p> <p>userdel 命令很简单，比如我们现在有个用户 linuxde，其 home 目录位于<code>/var</code>目录中，现在我们来删除这个用户：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">userdel</span> linuxde       <span class="token comment"># 删除用户linuxde，但不删除其家目录及文件；</span>
+$ <span class="token function">userdel</span> -r linuxde    <span class="token comment"># 删除用户linuxde，其 home 目录及文件一并删除；</span>
+</code></pre></div><h3 id="_2-6-usermod"><a href="#_2-6-usermod" class="header-anchor">#</a> 2.6. usermod</h3> <blockquote><p>usermod 命令用于修改用户的基本信息。usermod 命令不允许你改变正在线上的使用者帐号名称。当 usermod 命令用来改变 user id，必须确认这名 user 没在电脑上执行任何程序。你需手动更改使用者的 crontab 档。也需手动更改使用者的 at 工作档。采用 NIS server 须在 server 上更动相关的 NIS 设定。</p> <p>参考：http://man.linuxde.net/usermod</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 将 newuser2 添加到组 staff 中</span>
+$ <span class="token function">usermod</span> -G staff newuser2
+
+<span class="token comment"># 修改 newuser 的用户名为 newuser1</span>
+$ <span class="token function">usermod</span> -l newuser1 newuser
+
+<span class="token comment"># 锁定账号 newuser1</span>
+$ <span class="token function">usermod</span> -L newuser1
+
+<span class="token comment"># 解除对 newuser1 的锁定</span>
+$ <span class="token function">usermod</span> -U newuser1
+</code></pre></div><h3 id="_2-7-passwd"><a href="#_2-7-passwd" class="header-anchor">#</a> 2.7. passwd</h3> <blockquote><p>passwd 命令用于设置用户的认证信息，包括用户密码、密码过期时间等。系统管理者则能用它管理系统用户的密码。只有管理者可以指定用户名称，一般用户只能变更自己的密码。</p> <p>参考：http://man.linuxde.net/passwd</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 如果是普通用户执行 passwd 只能修改自己的密码。</span>
+<span class="token comment"># 如果新建用户后，要为新用户创建密码，则用 passwd 用户名，注意要以 root 用户的权限来创建。</span>
+$ <span class="token function">passwd</span> linuxde    <span class="token comment"># 更改或创建linuxde用户的密码；</span>
+Changing password <span class="token keyword">for</span> user linuxde.
+New UNIX password:          <span class="token comment"># 请输入新密码；</span>
+Retype new UNIX password:   <span class="token comment"># 再输入一次；</span>
+passwd: all authentication tokens updated successfully. <span class="token comment"># 成功；</span>
+
+<span class="token comment"># 普通用户如果想更改自己的密码，直接运行 passwd 即可，比如当前操作的用户是 linuxde。</span>
+$ <span class="token function">passwd</span>
+Changing password <span class="token keyword">for</span> user linuxde. <span class="token comment"># 更改linuxde用户的密码；</span>
+<span class="token punctuation">(</span>current<span class="token punctuation">)</span> UNIX password:   <span class="token comment"># 请输入当前密码；</span>
+New UNIX password:         <span class="token comment"># 请输入新密码；</span>
+Retype new UNIX password:  <span class="token comment"># 确认新密码；</span>
+passwd: all authentication tokens updated successfully. <span class="token comment"># 更改成功；</span>
+
+<span class="token comment"># 比如我们让某个用户不能修改密码，可以用`-l`选项来锁定：</span>
+$ <span class="token function">passwd</span> -l linuxde    <span class="token comment"># 锁定用户linuxde不能更改密码；</span>
+Locking password <span class="token keyword">for</span> user linuxde.
+passwd: Success           <span class="token comment"># 锁定成功；</span>
+
+$ <span class="token function">su</span> linuxde   <span class="token comment"># 通过su切换到linuxde用户；</span>
+$ <span class="token function">passwd</span>      <span class="token comment"># linuxde来更改密码；</span>
+Changing password <span class="token keyword">for</span> user linuxde.
+Changing password <span class="token keyword">for</span> linuxde
+<span class="token punctuation">(</span>current<span class="token punctuation">)</span> UNIX password:          <span class="token comment"># 输入linuxde的当前密码；</span>
+passwd: Authentication token manipulation error     <span class="token comment"># 失败，不能更改密码；</span>
+
+$ <span class="token function">passwd</span> -d linuxde  <span class="token comment"># 清除linuxde用户密码；</span>
+Removing password <span class="token keyword">for</span> user linuxde.
+passwd: Success                         <span class="token comment"># 清除成功；</span>
+
+$ <span class="token function">passwd</span> -S linuxde    <span class="token comment"># 查询linuxde用户密码状态；</span>
+Empty password.                         <span class="token comment"># 空密码，也就是没有密码；</span>
+</code></pre></div><h3 id="_2-8-su"><a href="#_2-8-su" class="header-anchor">#</a> 2.8. su</h3> <blockquote><p>su 命令用于切换当前用户身份到其他用户身份，变更时须输入所要变更的用户帐号与密码。</p> <p>参考：http://man.linuxde.net/su</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 变更帐号为 root 并在执行 ls 指令后退出变回原使用者：</span>
+$ <span class="token function">su</span> -c <span class="token function">ls</span> root
+
+<span class="token comment"># 变更帐号为 root 并传入`-f`选项给新执行的 shell：</span>
+$ <span class="token function">su</span> root -f
+
+<span class="token comment"># 变更帐号为 test 并改变工作目录至 test 的家目录：</span>
+$ <span class="token function">su</span> -test
+</code></pre></div><h3 id="_2-9-sudo"><a href="#_2-9-sudo" class="header-anchor">#</a> 2.9. sudo</h3> <blockquote><p>sudo 命令用来以其他身份来执行命令，预设的身份为 root。在 <code>/etc/sudoers</code> 中设置了可执行 sudo 指令的用户。若其未经授权的用户企图使用 sudo，则会发出警告的邮件给管理员。用户使用 sudo 时，必须先输入密码，之后有 5 分钟的有效期限，超过期限则必须重新输入密码。</p> <p>参考：http://man.linuxde.net/sudo</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 指定用户执行命令</span>
+$ <span class="token function">sudo</span> -u userb <span class="token function">ls</span> -l
+<span class="token comment"># 列出目前的权限</span>
+$ <span class="token function">sudo</span> -l
+<span class="token comment"># 显示sudo设置</span>
+$ <span class="token function">sudo</span> -L
+</code></pre></div><h4 id="_2-9-1-给普通用户授权-sudo"><a href="#_2-9-1-给普通用户授权-sudo" class="header-anchor">#</a> 2.9.1. 给普通用户授权 sudo</h4> <p>假设要给普通用户 mary 配置 sudo 权限：</p> <ol><li><code>/etc/sudoers</code> 文件存放了 sudo 的相关用户，但是默认是没有写权限的，所以需要设为可写：<code>chmod u+w /etc/sudoers</code></li> <li>在该文件中添加 <code>mary ALL=(ALL) ALL</code> ，保存并退出，让 mary 具有 sudo 的所有权限</li> <li>再将 <code>/etc/sudoers</code> 的权限恢复到默认状态：<code>chmod u-w /etc/sudoers</code></li></ol> <h4 id="_2-9-2-免密码授权-sudo"><a href="#_2-9-2-免密码授权-sudo" class="header-anchor">#</a> 2.9.2. 免密码授权 sudo</h4> <p>与给普通用户授权 sudo 类似，区别仅在于第 2 步：<code>mary ALL=(ALL) NOPASSWD: ALL</code>。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/linux-tutorial/edit/master/linux/cli/linux-cli-user.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/linux-tutorial/assets/js/app.4dd18532.js" defer></script><script src="/linux-tutorial/assets/js/4.271fb7d6.js" defer></script><script src="/linux-tutorial/assets/js/26.c7c37a93.js" defer></script>
+  </body>
+</html>

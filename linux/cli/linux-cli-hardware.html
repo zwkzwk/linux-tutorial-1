@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 硬件管理 | LINUX-TUTORIAL</title>
+    <meta name="description" content="数据库教程">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/linux-tutorial/favicon.ico">
+    
+    <link rel="preload" href="/linux-tutorial/assets/css/0.styles.341612c9.css" as="style"><link rel="preload" href="/linux-tutorial/assets/js/app.4dd18532.js" as="script"><link rel="preload" href="/linux-tutorial/assets/js/4.271fb7d6.js" as="script"><link rel="preload" href="/linux-tutorial/assets/js/21.417fb182.js" as="script"><link rel="prefetch" href="/linux-tutorial/assets/js/10.69fdd68c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/11.eb7175b8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/12.d35ea0e7.js"><link rel="prefetch" href="/linux-tutorial/assets/js/13.d45547e1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/14.140732b5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/15.12c75179.js"><link rel="prefetch" href="/linux-tutorial/assets/js/16.28e2806c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/17.d1e24780.js"><link rel="prefetch" href="/linux-tutorial/assets/js/18.7d20f4f6.js"><link rel="prefetch" href="/linux-tutorial/assets/js/19.72334cce.js"><link rel="prefetch" href="/linux-tutorial/assets/js/20.243efe4c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/22.0f4551f5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/23.c6fbfffe.js"><link rel="prefetch" href="/linux-tutorial/assets/js/24.8af3672b.js"><link rel="prefetch" href="/linux-tutorial/assets/js/25.d455181f.js"><link rel="prefetch" href="/linux-tutorial/assets/js/26.c7c37a93.js"><link rel="prefetch" href="/linux-tutorial/assets/js/27.35736e6c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/28.2f12c1e5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/29.2d1c1b08.js"><link rel="prefetch" href="/linux-tutorial/assets/js/30.651fa6b5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/31.8a0bc2bd.js"><link rel="prefetch" href="/linux-tutorial/assets/js/32.680c3db8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/33.d7c1dff6.js"><link rel="prefetch" href="/linux-tutorial/assets/js/34.87e3cf7a.js"><link rel="prefetch" href="/linux-tutorial/assets/js/35.867ae8b0.js"><link rel="prefetch" href="/linux-tutorial/assets/js/36.38ea1dde.js"><link rel="prefetch" href="/linux-tutorial/assets/js/37.ab01ee97.js"><link rel="prefetch" href="/linux-tutorial/assets/js/38.af1d15b8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/39.ae9559b5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/40.e5b6954b.js"><link rel="prefetch" href="/linux-tutorial/assets/js/41.e8a94e61.js"><link rel="prefetch" href="/linux-tutorial/assets/js/42.41f47798.js"><link rel="prefetch" href="/linux-tutorial/assets/js/43.7a55c2fa.js"><link rel="prefetch" href="/linux-tutorial/assets/js/44.fc7677dd.js"><link rel="prefetch" href="/linux-tutorial/assets/js/45.71927ad5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/46.5c73c434.js"><link rel="prefetch" href="/linux-tutorial/assets/js/47.8dcc9e40.js"><link rel="prefetch" href="/linux-tutorial/assets/js/48.8d50fab8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/49.77f770cd.js"><link rel="prefetch" href="/linux-tutorial/assets/js/5.a5e63d96.js"><link rel="prefetch" href="/linux-tutorial/assets/js/50.7f42c141.js"><link rel="prefetch" href="/linux-tutorial/assets/js/51.09009399.js"><link rel="prefetch" href="/linux-tutorial/assets/js/52.c565a8c2.js"><link rel="prefetch" href="/linux-tutorial/assets/js/53.fc9e7d7c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/54.cc24d207.js"><link rel="prefetch" href="/linux-tutorial/assets/js/55.bf2ed9cb.js"><link rel="prefetch" href="/linux-tutorial/assets/js/56.5efcc9ed.js"><link rel="prefetch" href="/linux-tutorial/assets/js/57.b82a9d75.js"><link rel="prefetch" href="/linux-tutorial/assets/js/58.da1a6293.js"><link rel="prefetch" href="/linux-tutorial/assets/js/59.f2d560a3.js"><link rel="prefetch" href="/linux-tutorial/assets/js/6.b1076aa1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/7.49d24c76.js"><link rel="prefetch" href="/linux-tutorial/assets/js/8.521f6d18.js"><link rel="prefetch" href="/linux-tutorial/assets/js/9.0cff09de.js"><link rel="prefetch" href="/linux-tutorial/assets/js/vendors~flowchart.f5cdfab1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/vendors~notification.7414fc30.js">
+    <link rel="stylesheet" href="/linux-tutorial/assets/css/0.styles.341612c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/linux-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="LINUX-TUTORIAL" class="logo"> <span class="site-name can-hide">LINUX-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/linux-tutorial/linux/cli/" class="nav-link router-link-active">
+  Linux 命令
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/ops/" class="nav-link">
+  Linux 运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/soft/" class="nav-link">
+  Linux 软件运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/docker/" class="nav-link">
+  Docker 教程
+</a></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dunwu/linux-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/linux-tutorial/linux/cli/" class="nav-link router-link-active">
+  Linux 命令
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/ops/" class="nav-link">
+  Linux 运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/soft/" class="nav-link">
+  Linux 软件运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/docker/" class="nav-link">
+  Docker 教程
+</a></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dunwu/linux-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Linux 硬件管理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/linux-tutorial/linux/cli/linux-cli-hardware.html#_1-linux-硬件管理要点" class="sidebar-link">1. Linux 硬件管理要点</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/linux-tutorial/linux/cli/linux-cli-hardware.html#_2-命令常见用法" class="sidebar-link">2. 命令常见用法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-hardware.html#_2-1-df" class="sidebar-link">2.1. df</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-hardware.html#_2-2-du" class="sidebar-link">2.2. du</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-hardware.html#_2-3-top" class="sidebar-link">2.3. top</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-hardware.html#_2-4-free" class="sidebar-link">2.4. free</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/cli/linux-cli-hardware.html#_2-5-iotop" class="sidebar-link">2.5. iotop</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="linux-硬件管理"><a href="#linux-硬件管理" class="header-anchor">#</a> Linux 硬件管理</h1> <blockquote><p>关键词：<code>df</code>, <code>du</code>, <code>top</code>, <code>free</code>, <code>iotop</code></p></blockquote> <h2 id="_1-linux-硬件管理要点"><a href="#_1-linux-硬件管理要点" class="header-anchor">#</a> 1. Linux 硬件管理要点</h2> <ul><li>查看磁盘空间 - 使用 <a href="#df">df</a></li> <li>查看文件或目录的磁盘空间 - 使用 <a href="#du">du</a></li> <li>实时查看系统整体运行状态（如：CPU、内存） - 使用 <a href="#top">top</a></li> <li>查看已使用和未使用的内存 - 使用 <a href="#free">free</a></li> <li>查看磁盘 I/O 使用状况 - 使用 <a href="#iotop">iotop</a></li></ul> <h2 id="_2-命令常见用法"><a href="#_2-命令常见用法" class="header-anchor">#</a> 2. 命令常见用法</h2> <h3 id="_2-1-df"><a href="#_2-1-df" class="header-anchor">#</a> 2.1. df</h3> <blockquote><p>df 命令用于显示磁盘分区上的可使用的磁盘空间。默认显示单位为 KB。可以利用该命令来获取硬盘被占用了多少空间，目前还剩下多少空间等信息。</p> <p>参考：http://man.linuxde.net/df</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看系统磁盘设备，默认是 KB 为单位</span>
+<span class="token punctuation">[</span>root@LinServ-1 ~<span class="token punctuation">]</span><span class="token comment"># df</span>
+文件系统               1K-块        已用     可用 已用% 挂载点
+/dev/sda2            <span class="token number">146294492</span>  <span class="token number">28244432</span> <span class="token number">110498708</span>  <span class="token number">21</span>% /
+/dev/sda1              <span class="token number">1019208</span>     <span class="token number">62360</span>    <span class="token number">904240</span>   <span class="token number">7</span>% /boot
+tmpfs                  <span class="token number">1032204</span>         <span class="token number">0</span>   <span class="token number">1032204</span>   <span class="token number">0</span>% /dev/shm
+/dev/sdb1            <span class="token number">2884284108</span> <span class="token number">218826068</span> <span class="token number">2518944764</span>   <span class="token number">8</span>% /data1
+
+<span class="token comment"># 使用 -h 选项以 KB 以上的单位来显示，可读性高</span>
+<span class="token punctuation">[</span>root@LinServ-1 ~<span class="token punctuation">]</span><span class="token comment"># df -h</span>
+文件系统              容量  已用 可用 已用% 挂载点
+/dev/sda2             140G   27G  106G  <span class="token number">21</span>% /
+/dev/sda1             996M   61M  884M   <span class="token number">7</span>% /boot
+tmpfs                1009M     <span class="token number">0</span> 1009M   <span class="token number">0</span>% /dev/shm
+/dev/sdb1             <span class="token number">2</span>.7T  209G  <span class="token number">2</span>.4T   <span class="token number">8</span>% /data1
+
+<span class="token comment"># 查看全部文件系统</span>
+<span class="token punctuation">[</span>root@LinServ-1 ~<span class="token punctuation">]</span><span class="token comment"># df -a</span>
+文件系统               1K-块        已用     可用 已用% 挂载点
+/dev/sda2            <span class="token number">146294492</span>  <span class="token number">28244432</span> <span class="token number">110498708</span>  <span class="token number">21</span>% /
+proc                         <span class="token number">0</span>         <span class="token number">0</span>         <span class="token number">0</span>   -  /proc
+sysfs                        <span class="token number">0</span>         <span class="token number">0</span>         <span class="token number">0</span>   -  /sys
+devpts                       <span class="token number">0</span>         <span class="token number">0</span>         <span class="token number">0</span>   -  /dev/pts
+/dev/sda1              <span class="token number">1019208</span>     <span class="token number">62360</span>    <span class="token number">904240</span>   <span class="token number">7</span>% /boot
+tmpfs                  <span class="token number">1032204</span>         <span class="token number">0</span>   <span class="token number">1032204</span>   <span class="token number">0</span>% /dev/shm
+/dev/sdb1            <span class="token number">2884284108</span> <span class="token number">218826068</span> <span class="token number">2518944764</span>   <span class="token number">8</span>% /data1
+none                         <span class="token number">0</span>         <span class="token number">0</span>         <span class="token number">0</span>   -  /proc/sys/fs/binfmt_misc
+</code></pre></div><h3 id="_2-2-du"><a href="#_2-2-du" class="header-anchor">#</a> 2.2. du</h3> <blockquote><p>du 命令也是查看使用空间的，但是与 df 命令不同的是：du 命令是对文件和目录磁盘使用的空间的查看，还是和 df 命令有一些区别的。</p> <p>参考：http://man.linuxde.net/du</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 显示目录或者文件所占空间</span>
+root@localhost <span class="token punctuation">[</span>test<span class="token punctuation">]</span><span class="token comment"># du</span>
+<span class="token number">608</span> ./test6
+<span class="token number">308</span> ./test4
+<span class="token number">4</span> ./scf/lib
+<span class="token number">4</span> ./scf/service/deploy/product
+<span class="token number">4</span> ./scf/service/deploy/info
+<span class="token number">12</span> ./scf/service/deploy
+<span class="token number">16</span> ./scf/service
+<span class="token number">4</span> ./scf/doc
+<span class="token number">4</span> ./scf/bin
+<span class="token number">32</span> ./scf
+<span class="token number">8</span> ./test3
+<span class="token number">1288</span> <span class="token builtin class-name">.</span>
+
+<span class="token comment"># 显示指定文件所占空间</span>
+<span class="token punctuation">[</span>root@localhost test<span class="token punctuation">]</span><span class="token comment"># du log2012.log</span>
+<span class="token number">300</span> log2012.log
+
+<span class="token comment"># 查看指定目录的所占空间</span>
+<span class="token punctuation">[</span>root@localhost test<span class="token punctuation">]</span><span class="token comment"># du scf</span>
+<span class="token number">4</span> scf/lib
+<span class="token number">4</span> scf/service/deploy/product
+<span class="token number">4</span> scf/service/deploy/info
+<span class="token number">12</span> scf/service/deploy
+<span class="token number">16</span> scf/service
+<span class="token number">4</span> scf/doc
+<span class="token number">4</span> scf/bin
+<span class="token number">32</span> scf
+
+<span class="token comment"># 显示多个文件所占空间</span>
+<span class="token punctuation">[</span>root@localhost test<span class="token punctuation">]</span><span class="token comment"># du log30.tar.gz log31.tar.gz</span>
+<span class="token number">4</span> log30.tar.gz
+<span class="token number">4</span> log31.tar.gz
+
+<span class="token comment"># 只显示总和的大小</span>
+<span class="token punctuation">[</span>root@localhost test<span class="token punctuation">]</span><span class="token comment"># du -s</span>
+<span class="token number">1288</span> <span class="token builtin class-name">.</span>
+
+<span class="token punctuation">[</span>root@localhost test<span class="token punctuation">]</span><span class="token comment"># du -s scf</span>
+<span class="token number">32</span> scf
+</code></pre></div><h3 id="_2-3-top"><a href="#_2-3-top" class="header-anchor">#</a> 2.3. top</h3> <blockquote><p>top 命令可以实时动态地查看系统的整体运行情况，是一个综合了多方信息监测系统性能和运行信息的实用工具。通过 top 命令所提供的互动式界面，用热键可以管理。</p> <p>参考：http://man.linuxde.net/top</p></blockquote> <h3 id="_2-4-free"><a href="#_2-4-free" class="header-anchor">#</a> 2.4. free</h3> <blockquote><p>free 命令可以显示当前系统未使用的和已使用的内存数目，还可以显示被内核使用的内存缓冲区。</p> <p>参考：http://man.linuxde.net/free</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">free</span> -t    <span class="token comment"># 以总和的形式显示内存的使用信息</span>
+<span class="token function">free</span> -s <span class="token number">10</span> <span class="token comment"># 周期性的查询内存使用信息，每10s 执行一次命令</span>
+
+<span class="token comment"># 显示内存使用情况</span>
+
+<span class="token function">free</span> -m
+             total       used       <span class="token function">free</span>     shared    buffers     cached
+Mem:          <span class="token number">2016</span>       <span class="token number">1973</span>         <span class="token number">42</span>          <span class="token number">0</span>        <span class="token number">163</span>       <span class="token number">1497</span>
+-/+ buffers/cache:        <span class="token number">312</span>       <span class="token number">1703</span>
+Swap:         <span class="token number">4094</span>          <span class="token number">0</span>       <span class="token number">4094</span>
+</code></pre></div><h3 id="_2-5-iotop"><a href="#_2-5-iotop" class="header-anchor">#</a> 2.5. iotop</h3> <blockquote><p>iotop 命令是一个用来监视磁盘 I/O 使用状况的 top 类工具。iotop 具有与 top 相似的 UI，其中包括 PID、用户、I/O、进程等相关信息。Linux 下的 IO 统计工具如 iostat，nmon 等大多数是只能统计到 per 设备的读写情况，如果你想知道每个进程是如何使用 IO 的就比较麻烦，使用 iotop 命令可以很方便的查看。</p> <p>参考：http://man.linuxde.net/iotop</p></blockquote> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Total DISK read:       <span class="token number">0.00</span> B/s <span class="token operator">|</span> Total DISK write:       <span class="token number">0.00</span> B/s
+  TID  PRIO  <span class="token environment constant">USER</span>     DISK READ  DISK WRITE  SWAPIN     IO<span class="token operator">&gt;</span>    <span class="token builtin class-name">command</span>
+    <span class="token number">1</span> be/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % init <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>
+    <span class="token number">2</span> be/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>kthreadd<span class="token punctuation">]</span>
+    <span class="token number">3</span> rt/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>migration/0<span class="token punctuation">]</span>
+    <span class="token number">4</span> be/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>ksoftirqd/0<span class="token punctuation">]</span>
+    <span class="token number">5</span> rt/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>watchdog/0<span class="token punctuation">]</span>
+    <span class="token number">6</span> rt/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>migration/1<span class="token punctuation">]</span>
+    <span class="token number">7</span> be/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>ksoftirqd/1<span class="token punctuation">]</span>
+    <span class="token number">8</span> rt/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>watchdog/1<span class="token punctuation">]</span>
+    <span class="token number">9</span> be/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>events/0<span class="token punctuation">]</span>
+   <span class="token number">10</span> be/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>events/1<span class="token punctuation">]</span>
+   <span class="token number">11</span> be/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>khelper<span class="token punctuation">]</span>
+<span class="token number">2572</span> be/4 root        <span class="token number">0.00</span> B/s    <span class="token number">0.00</span> B/s  <span class="token number">0.00</span> %  <span class="token number">0.00</span> % <span class="token punctuation">[</span>bluetooth<span class="token punctuation">]</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/linux-tutorial/edit/master/linux/cli/linux-cli-hardware.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/linux-tutorial/assets/js/app.4dd18532.js" defer></script><script src="/linux-tutorial/assets/js/4.271fb7d6.js" defer></script><script src="/linux-tutorial/assets/js/21.417fb182.js" defer></script>
+  </body>
+</html>
